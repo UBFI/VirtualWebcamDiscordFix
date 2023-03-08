@@ -11,3 +11,10 @@ codesign --force --deep --sign - /Applications/Discord\ Canary.app/Contents/Fram
 codesign --force --deep --sign - /Applications/Discord\ Canary.app/Contents/Frameworks/Discord\ Canary\ Helper\ \(Renderer\).app 
 ```
 The above commands will resign each app bundle without any entitlments disabling the sandbox attribute and allowing you to use a virtual webcam once again. You can also lock the Resources and Framewords directory in the main app bundle to keep updates from breaking your changes or removing your better discord shim.
+
+```
+codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper\ \(GPU\).app
+codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper.app 
+codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper\ \(Plugin\).app
+codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper\ \(Renderer\).app 
+```
