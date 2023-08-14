@@ -10,8 +10,8 @@ codesign --force --deep --sign - /Applications/Discord\ Canary.app/Contents/Fram
 codesign --force --deep --sign - /Applications/Discord\ Canary.app/Contents/Frameworks/Discord\ Canary\ Helper\ \(Plugin\).app
 codesign --force --deep --sign - /Applications/Discord\ Canary.app/Contents/Frameworks/Discord\ Canary\ Helper\ \(Renderer\).app 
 ```
-The above commands will resign each app bundle without any entitlments disabling the sandbox attribute and allowing you to use a virtual webcam once again. You can also lock the Resources and Framewords directory in the main app bundle to keep updates from breaking your changes or removing your better discord shim.
-UPDATE: All branches now support M1. Below is the command block for discords notmal release branch, just click copy and paste in terminal.
+The above commands will resign each app bundle without any entitlements disabling the sandbox attribute and allowing you to use a virtual webcam once again. You can also lock the Resources and Framewords directory in the main app bundle to keep updates from breaking your changes or removing your better discord shim.
+UPDATE: All branches now support M1. Below is the command block for discords normal release branch, just click copy and paste in terminal.
 ```
 codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper\ \(GPU\).app
 codesign --force --deep --sign - /Applications/Discord.app/Contents/Frameworks/Discord\ Helper.app 
